@@ -10,78 +10,71 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
   <title>Bryan Foch</title>
-
-
-
 </head>
 
 <body>
   <div class="caixa-principal">
     <nav>
-
+      <h1 class="sob-img">
+          <img src="./img/imagem-criacao-de-sites-600x450px.png" class="overlay-image" alt="Overlay Image">
+ 
+      
+      </h1>
       <h2 class="portfolio">Portfo<span>lio</span></h2>
-      <ul id="menulist">
-
-        <li><a class="link-menu" href="#home">Home</a></li>
-        <li><a class="link-menu" href="#sobre">Sobre</a></li>
-        <li><a class="link-menu" href="#projetos">Projeto</a></li>
-        <li><a class="link-menu" href="#social">Fale Comigo</a></li>
+      <img src="./img/menu (1).png" alt="botao-menu" class="menu-icon" onclick="showMenu()">
+      <ul id="menu-list">
+        <li class="nav-li"><a class="link-menu" href="#home">Home</a></li>
+        <li class="nav-li"><a class="link-menu" href="#sobre">Sobre</a></li>
+        <li class="nav-li"><a class="link-menu" href="#projetos">Projeto</a></li>
+        <li class="nav-li"><a class="link-menu" href="#social">Fale Comigo</a></li>
       </ul>
-  
     </nav>
-
-
-
   </div>
 
-    <div class="nome">
-      <h1>Bryan<span>Foch</span></h1>
-      <h3>Progamador Front End</h3>
+  <div class="nome">
+    <h1>Bryan<span>Foch</span></h1>
+    <h3>Progamador Front End</h3>
+  </div>
 
-    </div>
-  
-
-  <section id="sobre">
+  <section id="">
     <img src="./img/WhatsApp_Image_2023-10-11_at_18.18.47-removebg-preview.png">
-    <div>
-      <h2>Sobre mim</h2>
-      <p>Eu sou um progamador front end , estou cursando e tenho conhecimento básico em: Java, Python, C/C++, HTML , big data , C# , CSS, Git e GitHub, Redes de computadores, Segurança da Informação, Computação em nuvem, Paradigmas de linguagens de programação.</p>
-        <a href='https://wa.me/5521969110218'><button>Entrar em Contato</button></a>
-  
+    <div class="sobremim">
+      <h2 >Sobre mim</h2>
+      <p>Meu nome é Bryan, e sou um estudante dedicado com
+        um interesse no mundo da programação , front end , Java, Python, C/C++, HTML , big data , C# , CSS, Git e
+        GitHub, Redes de computadores, Segurança da
+        Informação, Computação em nuvem, Paradigmas de
+        linguagens de programação..</p>
+      <a href='https://wa.me/5521969110218'><button>Entrar em Contato</button></a>
     </div>
-
-
   </section>
 
   <div class="projeto" id="projetos">
     <h2>Principais projetos<h2>
+    <div class="card-projetos">
+      <div class="card">
+        <img src="./img/calendarreact.png">
+        <h5>Calendario React Native</h5>
+        <p>App de calendário para gerenciar compromissos, com dados salvos em SQLite.</p>
+        <a href="https://github.com/bryanfoch/projeto-react-native-" target="_blank">Ver projeto</a>
+      </div>
 
-        <div class="card-projetos">
-          <div class="card">
-            <img src="./img/calendarreact.png">
-            <h5>Calendario React Native</h5>
-            <p>App de calendário para gerenciar compromissos, com dados salvos em SQLite.</p>
-            <a href="https://github.com/bryanfoch/projeto-react-native-" target="_blank">Ver projeto</a>
+      <div class="card">
+        <img src="./img/Captura_de_tela_2023-12-26_171321-removebg-preview.png">
+        <h5>Formulario de Cadastro</h5>
+        <p>Interface de formulário, login e cadastro de cliente.</p>
+        <a href="https://bryanfoch.github.io/fomularioweb/" target="_blank">Ver projeto</a>
+      </div>
 
-          </div>
-
-          <div class="card">
-            <img src="./img/Captura_de_tela_2023-12-26_171321-removebg-preview.png">
-            <h5>Formulario de Cadastro</h5>
-            <p> interface de formulario, login e cadastro de cliente . </p>
-            <a href="https://bryanfoch.github.io/fomularioweb/" target="_blank">Ver projeto</a>
-
-          </div>
-
-          <div class="card">
-            <img src="./img/engrenagem-removebg-preview.png">
-            <h5>Em Breve</h5>
-            <p> descrição do projeto</p>
-            <a>Ver projeto</a>
-
-          </div>
-          
+      <div class="card">
+        <img src="./img/engrenagem-removebg-preview.png">
+        <h5>Em Breve</h5>
+        <p>Descrição do projeto</p>
+        <a>Ver projeto</a>
+      </div>
+    </div>
   </div>
+
   <footer id="social">
     <h5>Bryan Foch</h5>
     <p>Para mais informações</p>
@@ -89,7 +82,7 @@
     <div class="social" id="">
       <a href="https://wa.me/5521969110218">
         <img src="./img/whatsapp-removebg-preview (1).png" alt="">
-        
+
       </a>
 
       <a href="https://www.linkedin.com/in/bryan-foch-7002a7247/" target="_blank">
@@ -102,4 +95,15 @@
 
 </body>
 
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const menuList = document.getElementById('menu-list');
+
+  menuIcon.addEventListener('click', () => {
+      menuList.classList.toggle('active');
+  });
+</script>
+
+
 </html>
+

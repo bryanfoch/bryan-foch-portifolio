@@ -1,3 +1,4 @@
+/* Reset básico e configuração de fonte */
 * {
     margin: 0;
     padding: 0;
@@ -5,39 +6,43 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Estilo principal da caixa */
 .caixa-principal {
     height: 100vh;
     width: 100%;
-    background-image: url(./img/imagem-criacao-de-sites-600x450px.png);
+    background-image: url(./img/darkblue.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: ;
     background-color: #191b1e;
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 1000px;
+
 
 }
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+}
 
-
+/* Estilo de navegação */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-
-
+    padding: 20px 30px;
 }
 
 .portfolio {
     color: #dbe2ea;
     font-size: 40px;
+    POSITION: absolute;
 }
 
 .portfolio span {
     color: rgb(91, 137, 207);
-
 }
 
 li {
@@ -47,7 +52,7 @@ li {
     font-size: 20px;
     margin-right: 30px;
     cursor: pointer;
-
+    
 }
 
 li:hover {
@@ -59,70 +64,65 @@ li:hover {
     font-size: 25px;
     text-decoration: none;
     color: white;
-    background-color:#181819;
-    border-radius: 50px 60px 70px 
+    border-radius: 50px 60px 70px;
+}
 
-	}
+.link-menu:hover {
+    background-color: transparent;
+    border: 4px solid rgb(64, 97, 189);
+    transition: 0.3s;
+}
 
- .link-menu:hover{
-        background-color: transparent;
-        border: 4px solid rgb(0, 46, 173);
-        transition: 0.3s;
-
-    }
-
+/* Estilo para o nome */
 .nome {
     position: absolute;
     font-size: 40px;
     top: 50%;
     left: 7%;
-
 }
 
 h1 {
     color: #ffffff;
-
 }
 
 h1 span {
     color: rgb(91, 137, 207);
-
 }
- h3 {
+
+h3 {
     color: #ffffff;
     font-size: 25px;
 }
 
-section{
-      display: flex;
-     align-items: center;
-     padding: 60px 15%;
+/* Estilo de seção */
+section {
+    display: flex;
+    align-items: center;
+    padding: 60px 15%;
     background-color: black;
+    flex-direction: row;
 }
 
 section img {
     height: 400px;
     border-radius: 100%;
-    border: 2px solid rgb(0, 213, 255);
+    border: 9px solid rgb(4 127 151);
     margin-right: 50px;
 }
 
-section div h2{
-    color:white;
+section div h2 {
+    color: white;
     font-size: 75px;
-
 }
 
-section div p{
+section div p {
     color: white;
     font-size: 24px;
     margin-top: 15px;
     margin-bottom: 60px;
-    
 }
 
-
-section div button{
+section div button {
     color: white;
     background: rgb(0, 10, 78);
     height: 50px;
@@ -133,28 +133,27 @@ section div button{
     cursor: pointer;
 }
 
-section div button:hover{
-          background-color: black;
-          border: 3px solid blue;
-          transition: 0.5s;
-
+section div button:hover {
+    background-color: black;
+    border: 3px solid blue;
+    transition: 0.5s;
 }
 
-.projeto{
-    background-color: #171717;
+/* Estilo para projeto */
+.projeto {
+    background-image: url(./img/darkblue.jpg);
     padding-top: 50px;
     padding-bottom: 100px;
-
 }
 
-.projeto h2{
+.projeto h2 {
     color: white;
     font-size: 45px;
     text-align: center;
-} 
+}
 
 .card {
-    background-color: #000000;
+    background-color: #0a012a;
     height: 390px;
     width: 372px;
     border-radius: 20px;
@@ -164,24 +163,21 @@ section div button:hover{
 
 .card img {
     height: 100px;
-
 }
 
-.card h5{
+.card h5 {
     color: white;
     font-size: 24px;
-
 }
 
-.card p{
-       color: rgb(90, 90, 90);
-       font-size: 25px;
-       margin-top: 20px;
-       margin-bottom: 40px;
-
+.card p {
+    color: rgb(90, 90, 90);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.card a{
+.card a {
     background-color: rgb(2, 24, 105);
     color: white;
     padding: 10px 20px;
@@ -192,12 +188,12 @@ section div button:hover{
     text-decoration: none;
 }
 
-.card a:hover{
+.card a:hover {
     background-color: transparent;
     border: 2px solid rgb(2, 26, 92);
 }
 
-.card-projetos{
+.card-projetos {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
@@ -205,39 +201,38 @@ section div button:hover{
 }
 
 footer {
-     background-color: #000000;
-     padding-top: 100px;
-     padding-bottom: 120px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-
+    background-image: url(./img/darkondas.jpg);
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-footer h5{
+footer h5 {
     color: white;
     font-size: 20px;
 }
 
-footer p{
+footer p {
     color: white;
     font-size: 20px;
     margin-top: 14px;
     margin-bottom: 30px;
 }
 
-.social{
+.social {
     display: flex;
     gap: 20px;
 }
 
-.social img{
+.social img {
     height: 30px;
     border-radius: 50%;
 }
 
-.social a{
+.social a {
     background-color: rgb(60, 60, 62);
     border-radius: 50%;
     display: flex;
@@ -248,8 +243,197 @@ footer p{
     cursor: pointer;
 }
 
-.social a:hover { 
+.social a:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
 
+.menu-icon {
+    width: 25px;
+    margin-right: 15px;
+    display: none;
+}
+
+
+
+
+
+/* Responsividade */
+
+
+
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        display: flex;
+        margin-top: -407px;
+        padding: 9px 39px;
+    
+}
+    /* Cabeçalho */
+    
+      
+    
+
+    #menu-list {
+        position: relative;
+        top: 60px;
+        left: 60px;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+       
+        transition: all 0.8s ease-in-out;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #444;
+    }
+
+    .nav-li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+
+    .nav-li a:hover {
+        background-color: #475bf2;
+    }
+    .link-menu {
+        color: #ffffff;
+        background-color: #01001cb3;
+        border-radius: 50px 60px 70px;
+        font-size: 22px;
+        text-align: center;
+        margin-left: 45px;
+        position: relative;
+        left: 9px;
+        padding: 6px;
+        display: none;
+    }
+
+    /* Estilo do menu mobile */
+    .menu-mobile {
+        background-color: red;
+    }
+
+    /* Posição da foto */
+    .foto {
+        align-items: center;
+        width: 120%;
+        margin-right: 5px;
+    }
+    section img {
+        height: 307px;
+        border-radius: 100%;
+        border: 9px solid rgb(4 127 151);
+        margin-right: 50px;
+        margin-bottom: 280px;
+    }
+    
+
+    h1 {
+        margin-top: 40px;
+        margin-left: -49px;
+        padding: 20px 8%;
+    }
+
+
+    section div h2 {
+        color: #141a73;
+        font-size: 60px;
+        margin-top: -237px;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    .portfolio {
+        color: #dbe2ea;
+        font-size: 40px;
+        POSITION: absolute;
+        TOP: 2%;
+    }
+    .overlay-image {
+        position: absolute;
+        top: 34%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        max-width: 103%;
+        height: 298px;
+    }
+    section {
+        display: flex;
+        align-items: baseline;
+        padding: 60px 15%;
+        background-color: black;
+        flex-wrap: wrap;
+        align-content: baseline;
+        flex-direction: column;
+    }
+    section div p {
+        text-align: center;
+        margin-right: 35px;
+    }
+
+    section div button {
+        height: 50px;
+        width: 310px;
+        font-size: 18px;
+    }
+
+    .projeto h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .card-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    footer {
+        padding-top: 0px;
+        padding-bottom: 6px;
+    }
+
+    footer h5 {
+        color: #0c00ed;
+        margin-top: 12px;
+    }
+
+    footer p {
+        color: #0015df;
+        margin-top: 2px;
+        margin-bottom: 16px;
+    }
+
+    /* Área de contato */
+    .projeto {
+        background-color: #171717;
+        padding-top: 50px;
+        padding-bottom: 1px;
+    }
+
+    /* Adicionando uma classe ativa para exibir o menu */
+    #menu-list.active {
+        max-height: 300px; /* Ajuste o valor conforme necessário */
+    }
+}
